@@ -1,5 +1,5 @@
 markdown:
-	bash ./word-formats.sh
+	bash ./preprocess.sh
 
 clean:
 	rm -r $(OUTPUT_DIRECTORY)
