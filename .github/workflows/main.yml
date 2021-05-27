@@ -8,15 +8,14 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-20.04
-    container:
-      image: pandoc/core:2.13
+
     steps:
       
       - name: Checkout Repo
         uses: actions/checkout@v2
 
-      - name: install Make
-        run: sudo apt-get install make
+      - name: Install Pandoc
+        run: brew install pandoc
       
       - name: Run Convert Script
         run: make markdown
