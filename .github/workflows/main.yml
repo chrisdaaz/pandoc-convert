@@ -15,6 +15,9 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
 
+      - name: install Make
+        run: sudo apt-get install make
+      
       - name: Run Convert Script
         run: make markdown
 
